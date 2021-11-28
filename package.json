@@ -1,11 +1,10 @@
 {
-    "name": "@samvvw/cli-project",
-    "version": "1.0.0",
+    "name": "create-sam-react-app",
+    "version": "1.0.1",
     "description": "CLI to create new projects",
     "main": "build/index.js",
     "bin": {
-        "@samvvw/cli-project": "bin/create-project",
-        "cli-project": "bin/create-project"
+        "create-sam-react-app": "bin/create-project"
     },
     "publishConfig": {
         "access": "public"

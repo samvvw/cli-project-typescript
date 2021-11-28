@@ -94,7 +94,7 @@ export async function cli(args: string[]) {
     console.log(
         chalk.green(
             figlet.textSync('Sam\nCLI', {
-                font: 'Isometric3',
+                // font: 'Isometric3',
                 horizontalLayout: 'default',
                 verticalLayout: 'default',
                 width: 80,
