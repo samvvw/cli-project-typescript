@@ -94,11 +94,12 @@ export async function createProject(options: Options) {
                     cwd: options.targetDirectory,
                 })
             },
-            skip: () => {
-                return !options.runInstall
-                    ? 'Pass --install automatically install dependencies'
-                    : undefined
-            },
+            enabled: () => options.runInstall,
+            // skip: () => {
+            //     return !options.runInstall
+            //         ? 'Pass --install automatically install dependencies'
+            //         : undefined
+            // },
         },
     ])
 

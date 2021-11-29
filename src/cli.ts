@@ -81,12 +81,22 @@ async function promptForMissingOptions(options: Options) {
         })
     }
 
+    if (!options.runInstall) {
+        questions.push({
+            type: 'confirm',
+            name: 'runInstall',
+            message: 'Install dependencies?',
+            default: false,
+        })
+    }
+
     const answers: Options = await inquirer.prompt(questions)
 
     return {
         ...options,
         template: options.template || answers.template,
         git: options.git || answers.git,
+        runInstall: options.runInstall || answers.runInstall,
     }
 }
 
