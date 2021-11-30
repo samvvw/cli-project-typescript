@@ -103,12 +103,12 @@ async function promptForMissingOptions(options: Options) {
 export async function cli(args: string[]) {
     console.log(
         chalk.green(
-            figlet.textSync('Sam\nCLI', {
-                // font: 'Isometric3',
+            figlet.textSync("Sam's\nAPP", {
+                // font: 'Nancyj-Underlined',
                 horizontalLayout: 'default',
                 verticalLayout: 'default',
                 width: 80,
-                whitespaceBreak: true,
+                // whitespaceBreak: true,
             })
         )
     )

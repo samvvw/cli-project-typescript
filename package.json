@@ -1,6 +1,6 @@
 {
     "name": "create-sam-react-app",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "CLI to create new projects",
     "main": "build/index.js",
     "bin": {

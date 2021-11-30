@@ -110,7 +110,7 @@ export async function createProject(options: Options) {
     console.log(
         chalk.green(
             figlet.textSync('DONE \n\nProject Ready', {
-                font: 'Isometric3',
+                // font: 'Isometric3',
                 horizontalLayout: 'default',
                 verticalLayout: 'default',
                 width: 80,
